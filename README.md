@@ -48,7 +48,7 @@ This project was developed for the **Bajaj Finserv Datathon**. It's a FastAPI-ba
 │  - Bill data structures                     │
 └─────────────────────────────────────────────┘
 ```
-
+<img width="927" height="613" alt="Screenshot 2025-12-05 155304" src="https://github.com/user-attachments/assets/5270c0b6-4b9e-4e57-8048-c4446567a6e6" />
 ---
 
 ## File-by-File Breakdown
