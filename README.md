@@ -48,7 +48,8 @@ This project was developed for the Bajaj Finserv Datathon, where I secured All-I
 │  - Bill data structures                     │
 └─────────────────────────────────────────────┘
 ```
-<img width="927" height="613" alt="Screenshot 2025-12-05 155304" src="https://github.com/user-attachments/assets/5270c0b6-4b9e-4e57-8048-c4446567a6e6" />
+<img width="3995" height="2384" alt="Untitled diagram-2025-11-30-125049" src="https://github.com/user-attachments/assets/2466c873-1ddc-4034-becc-2055a2d23d46" />
+
 ---
 
 ## File-by-File Breakdown
