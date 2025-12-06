@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project was developed for the Bajaj Finserv Datathon, where I secured All-India Rank 11 among 2000+ participants from IITs, NITs, and BITS across India. It’s a FastAPI-based service that uses Google’s Gemini AI to automatically extract structured line-item data from medical bills (both hospital and pharmacy) in PDF or image format.
+This project was developed for the Bajaj Finserv Datathon, where I secured All-India Rank 11 among 2000+ participants from IITs, NITs, and BITS across India. It is a FastAPI-based service that uses Google Gemini API to automatically extract structured line-item data from medical bills (both hospital and pharmacy) in PDF or image format.
 
 **Key Feature**: Converts unstructured medical bills into clean, structured JSON data with page-wise line items, handling both typed and handwritten documents.
 
