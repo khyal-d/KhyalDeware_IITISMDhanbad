@@ -216,19 +216,54 @@ Keeps all MIME complexity out of main business logic.
 **`EXTRACTION_JSON_SCHEMA`**
 
 ```json
+
 {
-  "name": "bill_extraction_schema",
-  "schema": {
-    "type": "object",
-    "properties": {
-      "pagewise_line_items": { /* ... */ },
-      "total_item_count": {"type": "integer"}
+    "name": "bill_extraction_schema",
+    "schema": {
+        "type": "object",
+        "properties": {
+            "pagewise_line_items": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "page_no": {"type": "string"},
+                        "page_type": {
+                            "type": "string",
+                            "enum": ["Bill Detail", "Final Bill", "Pharmacy"],
+                        },
+                        "bill_items": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "item_name": {"type": "string"},
+                                    "item_amount": {"type": "number"},
+                                    "item_rate": {"type": "number"},
+                                    "item_quantity": {"type": "number"},
+                                },
+                                "required": [
+                                    "item_name",
+                                    "item_amount",
+                                    "item_rate",
+                                    "item_quantity",
+                                ],
+                                "additionalProperties": False,
+                            },
+                        },
+                    },
+                    "required": ["page_no", "page_type", "bill_items"],
+                    "additionalProperties": False,
+                },
+            },
+            "total_item_count": {"type": "integer"},
+        },
+        "required": ["pagewise_line_items", "total_item_count"],
+        "additionalProperties": False,
     },
-    "required": ["pagewise_line_items", "total_item_count"],
-    "additionalProperties": false
-  },
-  "strict": true
+    "strict": True,
 }
+
 ```
 
 **Impact**: 
